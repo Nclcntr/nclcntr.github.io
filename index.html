@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicole U. Cantor - Skins Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      padding-top: 70px; /* Adjusted padding to account for fixed navbar */
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      transition: 0.3s;
+    }
+
+    .card-title,
+    .card-text {
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .navbar {
+      background-color: #1e1e1e;
+    }
+
+    .navbar-brand {
+      font-family: 'Press Start 2P', cursive;
+      color: #ffffff !important;
+    }
+
+    .btn-primary {
+      background-color: #bb86fc;
+      border-color: #bb86fc;
+    }
+
+    .btn-primary:hover {
+      background-color: #3700b3;
+      border-color: #3700b3;
+    }
+
+    .card-img-top {
+      height: 446px;
+      width: 100%;
+      object-fit: contain;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-content {
+      background-color: #1e1e1e;
+    }
+
+    .modal-images {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .modal-images img {
+      max-width: 45%;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      color: #ffffff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #bb86fc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #3700b3;
+      text-decoration: underline;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">Nicole Cantor's Skin Portfolio</a>
+    <div class="ml-auto">
+      <!-- Contact Icons -->
+      <a href="mailto:nicoleupaocantor@gmail.com" class="text-light mr-3">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.facebook.com/nicole.cantor15" target="_blank" class="text-light mr-3">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://ko-fi.com/wonto_n7" target="_blank" class="text-light mr-3">
+        <i class="fas fa-coffee"></i>
+      </a>
+      <a href="https://x.com/nclcntr" target="_blank" class="text-light">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Portfolio Container -->
+  <div class="container mt-5">
+    <!-- Popular Character Skins -->
+    <h1 class="card-title mb-4">Popular Character Skins</h1>
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="skins/front/deadpool.png" class="card-img-top" alt="deadpool">
+          <div class="card-body">
+            <h5 class="card-title">Marvel's Deadpool</h5>
+            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#skinModal1">View in detail</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="skins/front/itadori.png" class="card-img-top" alt="itadori">
+          <div class="card-body">
+            <h5 class="card-title">Itadori Yuji</h5>
+            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#skinModal2">View in detail</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="skins/front/jonathan.png" class="card-img-top" alt="jonathan">
+          <div class="card-body">
+            <h5 class="card-title">Jonathan</h5>
+            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#skinModal3">View in detail</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="skins/front/kratos.png" class="card-img-top" alt="kratos">
+          <div class="card-body">
+            <h5 class="card-title">Kratos</h5>
+            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#skinModal4">View in detail</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="skins/front/luffy.png" class="card-img-top" alt="luffy">
+          <div class="card-body">
+            <h5 class="card-title">Monkey D. Luffy</h5>
+            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#skinModal5">View in detail</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="skins/front/rengoku.png" class="card-img-top" alt="rengoku">
+          <div class="card-body">
+            <h5 class="card-title">Kyojuro Rengoku</h5>
+            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#skinModal6">View in detail</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="skins/front/zoro.png" class="card-img-top" alt="zoro">
+          <div class="card-body">
+            <h5 class="card-title">Roronoa Zoro</h5>
+            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#skinModal7">View in detail</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="skins/front/mavis.png" class="card-img-top" alt="Mavis">
+          <div class="card-body">
+            <h5 class="card-title">Mavis</h5>
+            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#skinModal8">View in detail</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="skins/front/mitsuri.png" class="card-img-top" alt="Mitsuri">
+          <div class="card-body">
+            <h5 class="card-title">Mitsuri Kanroji</h5>
+            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#skinModal9">View in detail</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="skins/front/rapunzle.png" class="card-img-top" alt="rapunzel">
+          <div class="card-body">
+            <h5 class="card-title">Rapunzel</h5>
+            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#skinModal10">View in detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Random Skins -->
+    <h1 class="card-title mb-4">Unique Skins</h1>
+    <div class="row">
+      <div class="col-md-3 mb-4"> 
+        <div class="card">
+          <img src="skins/front/random_GUY_1.png" class="card-img-top" alt="male_skin_1">
+          <div class="card-body">
+            <h5 class="card-title">Male Skin 1</h5>
+            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#skinModal11">View in detail</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="skins/front/random_GUY_2.png" class="card-img-top" alt="male_skin_2">
+          <div class="card-body">
+            <h5 class="card-title">Male Skin 2</h5>
+            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#skinModal12">View in detail</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="skins/front/random_GUY_3.png" class="card-img-top" alt="male_skin_3">
+          <div class="card-body">
+            <h5 class="card-title">Male Skin 3</h5>
+            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#skinModal13">View in detail</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="skins/front/random_GUY_4.png" class="card-img-top" alt="male_skin_4">
+          <div class="card-body">
+            <h5 class="card-title">Male Skin 4</h5>
+            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#skinModal14">View in detail</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="skins/front/random_GIRL_1.png" class="card-img-top" alt="female_skin_1">
+          <div class="card-body">
+            <h5 class="card-title">Female Skin 1</h5>
+            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#skinModal15">View in detail</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="skins/front/random_GIRL_2.png" class="card-img-top" alt="female_skin_2">
+          <div class="card-body">
+            <h5 class="card-title">Female Skin 2</h5>
+            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#skinModal16">View in detail</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="skins/front/random_GIRL_3.png" class="card-img-top" alt="female_skin_3">
+          <div class="card-body">
+            <h5 class="card-title">Female Skin 3</h5>
+            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#skinModal17">View in detail</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="skins/front/random_GIRL_4.png" class="card-img-top" alt="female_skin_4">
+          <div class="card-body">
+            <h5 class="card-title">Female Skin 4</h5>
+            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#skinModal18">View in detail</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <img src="skins/front/random_GIRL_5.png" class="card-img-top" alt="female_skin_5">
+          <div class="card-body">
+            <h5 class="card-title">Female Skin 5</h5>
+            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#skinModal19">View in detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modals for Fullscreen View -->
+  <div class="modal fade" id="skinModal1" tabindex="-1" aria-labelledby="skinModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body modal-images">
+          <img src="skins/front/deadpool.png" class="img-fluid" alt="Deadpool Front">
+          <img src="skins/rear/deadpool.png" class="img-fluid" alt="Deadpool Rear">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="skinModal2" tabindex="-1" aria-labelledby="skinModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body modal-images">
+          <img src="skins/front/itadori.png" class="img-fluid" alt="Itadori Front">
+          <img src="skins/rear/itadori.png" class="img-fluid" alt="Itadori Rear">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="skinModal3" tabindex="-1" aria-labelledby="skinModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body modal-images">
+          <img src="skins/front/jonathan.png" class="img-fluid" alt="Jonathan Front">
+          <img src="skins/rear/jonathan.png" class="img-fluid" alt="Jonathan Rear">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="skinModal4" tabindex="-1" aria-labelledby="skinModalLabel4" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body modal-images">
+          <img src="skins/front/kratos.png" class="img-fluid" alt="Kratos Front">
+          <img src="skins/rear/kratos.png" class="img-fluid" alt="Kratos Rear">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="skinModal5" tabindex="-1" aria-labelledby="skinModalLabel5" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body modal-images">
+          <img src="skins/front/luffy.png" class="img-fluid" alt="Luffy Front">
+          <img src="skins/rear/luffy.png" class="img-fluid" alt="Luffy Rear">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="skinModal6" tabindex="-1" aria-labelledby="skinModalLabel6" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body modal-images">
+          <img src="skins/front/rengoku.png" class="img-fluid" alt="Rengoku Front">
+          <img src="skins/rear/rengoku.png" class="img-fluid" alt="Rengoku Rear">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="skinModal7" tabindex="-1" aria-labelledby="skinModalLabel7" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body modal-images">
+          <img src="skins/front/zoro.png" class="img-fluid" alt="Zoro Front">
+          <img src="skins/rear/zoro.png" class="img-fluid" alt="Zoro Rear">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="skinModal8" tabindex="-1" aria-labelledby="skinModalLabel8" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body modal-images">
+          <img src="skins/front/mavis.png" class="img-fluid" alt="Mavis Front">
+          <img src="skins/rear/mavis.png" class="img-fluid" alt="Mavis Rear">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="skinModal9" tabindex="-1" aria-labelledby="skinModalLabel9" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body modal-images">
+          <img src="skins/front/mitsuri.png" class="img-fluid" alt="Mitsuri Front">
+          <img src="skins/rear/mitsuri.png" class="img-fluid" alt="Mitsuri Rear">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="skinModal10" tabindex="-1" aria-labelledby="skinModalLabel10" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body modal-images">
+          <img src="skins/front/rapunzle.png" class="img-fluid" alt="Rapunzel Front">
+          <img src="skins/rear/rapunzle.png" class="img-fluid" alt="Rapunzel Rear">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="skinModal11" tabindex="-1" aria-labelledby="skinModalLabel11" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body modal-images">
+          <img src="skins/front/random_GUY_1.png" class="img-fluid" alt="Male Skin 1 Front">
+          <img src="skins/rear/random_GUY_1.png" class="img-fluid" alt="Male Skin 1 Rear">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="skinModal12" tabindex="-1" aria-labelledby="skinModalLabel12" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body modal-images">
+          <img src="skins/front/random_GUY_2.png" class="img-fluid" alt="Male Skin 2 Front">
+          <img src="skins/rear/random_GUY_2.png" class="img-fluid" alt="Male Skin 2 Rear">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="skinModal13" tabindex="-1" aria-labelledby="skinModalLabel13" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body modal-images">
+          <img src="skins/front/random_GUY_3.png" class="img-fluid" alt="Male Skin 3 Front">
+          <img src="skins/rear/random_GUY_3.png" class="img-fluid" alt="Male Skin 3 Rear">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="skinModal14" tabindex="-1" aria-labelledby="skinModalLabel14" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body modal-images">
+          <img src="skins/front/random_GUY_4.png" class="img-fluid" alt="Male Skin 4 Front">
+          <img src="skins/rear/random_GUY_4.png" class="img-fluid" alt="Male Skin 4 Rear">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="skinModal15" tabindex="-1" aria-labelledby="skinModalLabel15" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body modal-images">
+          <img src="skins/front/random_GIRL_1.png" class="img-fluid" alt="Female Skin 1 Front">
+          <img src="skins/rear/random_GIRL_1.png" class="img-fluid" alt="Female Skin 1 Rear">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="skinModal16" tabindex="-1" aria-labelledby="skinModalLabel16" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body modal-images">
+          <img src="skins/front/random_GIRL_2.png" class="img-fluid" alt="Female Skin 2 Front">
+          <img src="skins/rear/random_GIRL_2.png" class="img-fluid" alt="Female Skin 2 Rear">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="skinModal17" tabindex="-1" aria-labelledby="skinModalLabel17" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body modal-images">
+          <img src="skins/front/random_GIRL_3.png" class="img-fluid" alt="Female Skin 3 Front"> 
+          <img src="skins/rear/random_GIRL_3.png" class="img-fluid" alt="Female Skin 3 Rear">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="skinModal18" tabindex="-1" aria-labelledby="skinModalLabel18" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body modal-images">
+          <img src="skins/front/random_GIRL_4.png" class="img-fluid" alt="Female Skin 4 Front">
+          <img src="skins/rear/random_GIRL_4.png" class="img-fluid" alt="Female Skin 4 Rear">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="skinModal19" tabindex="-1" aria-labelledby="skinModalLabel19" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body modal-images">
+          <img src="skins/front/random_GIRL_5.png" class="img-fluid" alt="Female Skin 5 Front">
+          <img src="skins/rear/random_GIRL_5.png" class="img-fluid" alt="Female Skin 5 Rear">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Nicole U. Cantor. All rights reserved.</p>
+    <p>
+      <a href="https://ko-fi.com/wonto_n7">Support Me on Ko-fi</a>
+    </p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
